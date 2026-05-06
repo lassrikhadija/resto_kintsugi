@@ -1,0 +1,27 @@
+# ============ Originaux d'images (trop lourds pour git) ============
+# Les versions optimisees dans images/optimized/ sont versionnees et
+# suffisent au site. Les originaux PNG (~166 Mo) restent en local.
+# Pour les recreer: relancer optimize-images.py + make-logo-transparent.py
+images/*.png
+images/*.PNG
+
+# ============ OS / Editeurs ============
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# ============ Python ============
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ============ Logs / Temp ============
+*.log
+.tmp/
+.tmp_*/
+*.bak

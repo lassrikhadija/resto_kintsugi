@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /optimize-images.py
+
+Sitemap: https://kintsugi-sushi.ca/sitemap.xml
