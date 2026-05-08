@@ -8,7 +8,7 @@ Premier projet du portfolio **Nextiweb.ca** (agence web canadienne).
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - **Bilingue FR / EN** avec balises `hreflang` (SEO multilingue propre)
 - **One-page responsive** (desktop, tablette, mobile)

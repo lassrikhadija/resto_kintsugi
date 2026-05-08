@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 4. Reveal on scroll ---
   const revealEls = document.querySelectorAll(
-    '.section__title, .section__lead, .dish, .review, .gallery__item, .stat, .form, .info-list, .team__member, .faq__item, .cta-banner'
+    '.section__title, .section__lead, .dish, .review, .gallery__item, .stat, .form, .info-list, .team__member, .faq__item, .cta-banner, .ncard, .nextiweb__sub, .nextiweb__lead'
   );
   revealEls.forEach(el => el.classList.add('reveal'));
 
@@ -150,6 +150,20 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 3500);
     });
   }
+
+  // --- 7bis. Nextiweb cards — spotlight qui suit la souris ---
+  const ncards = document.querySelectorAll('.ncard');
+  ncards.forEach(card => {
+    card.addEventListener('pointermove', (e) => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty('--mx', (e.clientX - rect.left) + 'px');
+      card.style.setProperty('--my', (e.clientY - rect.top) + 'px');
+    });
+    card.addEventListener('pointerleave', () => {
+      card.style.removeProperty('--mx');
+      card.style.removeProperty('--my');
+    });
+  });
 
   // --- 7. FAQ — auto-close others when opening one ---
   const faqItems = document.querySelectorAll('.faq__item');

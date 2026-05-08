@@ -903,6 +903,176 @@ input, select, textarea { font: inherit; color: inherit; }
   .demo-badge__text span { font-size: 10px; }
 }
 
+/* ============ NEXTIWEB SERVICES ============ */
+.nextiweb {
+  position: relative;
+  padding: 110px 0 120px;
+  background:
+    radial-gradient(ellipse at 15% 0%, rgba(212,175,55,0.08) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 100%, rgba(212,175,55,0.05) 0%, transparent 55%),
+    linear-gradient(180deg, #060606 0%, #0a0a0a 100%);
+  overflow: hidden;
+  border-top: 1px solid rgba(212,175,55,0.12);
+}
+.nextiweb__bg {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(212,175,55,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212,175,55,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+  pointer-events: none;
+}
+.nextiweb__header {
+  text-align: center;
+  margin-bottom: 64px;
+  position: relative; z-index: 1;
+}
+.nextiweb__header .eyebrow {
+  padding-left: 0;
+  margin-bottom: 18px;
+}
+.nextiweb__header .eyebrow::before { display: none; }
+.nextiweb__header .section__title { margin-bottom: 14px; }
+.nextiweb__sub {
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+  font-weight: 300;
+  color: var(--text-muted);
+  margin-bottom: 22px;
+  line-height: 1.3;
+}
+.nextiweb__sub em {
+  color: var(--gold);
+  font-style: italic;
+  font-weight: 500;
+}
+.nextiweb__lead {
+  max-width: 580px;
+  margin: 0 auto;
+  color: var(--text-soft);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.nextiweb__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  position: relative; z-index: 1;
+}
+@media (max-width: 1080px) {
+  .nextiweb__grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
+}
+
+/* ----- Card glassmorphism + spotlight ----- */
+.ncard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 24px;
+  background: rgba(255,255,255,0.04);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  transition:
+    transform .35s cubic-bezier(.2,.8,.2,1),
+    border-color .3s ease,
+    box-shadow .35s ease,
+    background .3s ease;
+}
+.ncard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    420px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(212,175,55,0.18),
+    transparent 55%
+  );
+  opacity: 0;
+  transition: opacity .35s ease;
+  pointer-events: none;
+}
+.ncard:hover,
+.ncard:focus-visible {
+  transform: translateY(-6px);
+  border-color: rgba(212,175,55,0.55);
+  background: rgba(255,255,255,0.055);
+  box-shadow:
+    0 22px 50px rgba(0,0,0,0.55),
+    0 0 0 1px rgba(212,175,55,0.18) inset;
+  outline: none;
+}
+.ncard:hover::before,
+.ncard:focus-visible::before { opacity: 1; }
+
+.ncard__icon {
+  width: 38px; height: 38px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(212,175,55,0.18), rgba(212,175,55,0.06));
+  border: 1px solid rgba(212,175,55,0.30);
+  color: var(--gold);
+  margin-bottom: 18px;
+  transition: transform .35s ease, background .3s ease;
+}
+.ncard:hover .ncard__icon {
+  transform: scale(1.06) rotate(-2deg);
+  background: linear-gradient(135deg, rgba(212,175,55,0.28), rgba(212,175,55,0.10));
+}
+
+.ncard__title {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 10px;
+  letter-spacing: -0.005em;
+}
+.ncard__text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.72);
+  margin-bottom: 22px;
+  flex: 1;
+}
+.ncard__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+  border-bottom: 1px solid transparent;
+  align-self: flex-start;
+  padding-bottom: 2px;
+  transition: gap .3s ease, border-color .3s ease;
+}
+.ncard__arrow {
+  transition: transform .3s ease;
+  flex-shrink: 0;
+}
+.ncard:hover .ncard__cta,
+.ncard:focus-visible .ncard__cta {
+  gap: 12px;
+  border-bottom-color: rgba(212,175,55,0.55);
+}
+.ncard:hover .ncard__arrow {
+  transform: translateX(3px);
+}
+
+@media (max-width: 700px) {
+  .nextiweb { padding: 80px 0 90px; }
+}
+
 /* ============ ANIMATIONS SCROLL ============ */
 .reveal {
   opacity: 0; transform: translateY(30px);
