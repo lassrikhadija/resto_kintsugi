@@ -1,0 +1,104 @@
+# Kintsugi Sushi Bar
+
+> Restaurant japonais haut de gamme à Montréal (Québec, Canada). Cuisine traditionnelle façonnée à la main par un chef formé à Tokyo. Sushis, sashimis, créations signature et menu omakase. Cadre intimiste noir et or inspiré du *kintsugi*, l'art japonais de réparer la céramique avec de l'or.
+
+**⚠️ Note importante** : ce site est une **démonstration vitrine** créée par [Nextiweb.ca](https://nextiweb.ca), agence web canadienne. Le restaurant Kintsugi Sushi Bar n'existe pas réellement — coordonnées, équipe et avis sont illustratifs. Pour un vrai site web sur mesure, contactez Nextiweb.
+
+## À propos
+
+- **Nom** : Kintsugi Sushi Bar
+- **Type** : Restaurant japonais (sushi premium)
+- **Ville** : Montréal, Québec, Canada
+- **Adresse** : 1234 rue Saint-Denis, Montréal (QC) H2X 3K2 *(fictive — démo)*
+- **Téléphone** : +1 (514) 555-0123 *(fictif)*
+- **Courriel** : contact@kintsugi-sushi.ca *(fictif)*
+- **Note moyenne** : 4,9 / 5 (287 avis Google) *(illustratif)*
+- **Ticket moyen** : 45–65 $ CAD par personne
+- **Horaires** :
+  - Lundi à jeudi : 17 h 30 – 22 h 00
+  - Vendredi à samedi : 17 h 30 – 23 h 30
+  - Dimanche : 17 h 00 – 21 h 30
+- **Bilingue** : français (par défaut) et anglais
+- **Conformité** : Loi 25 (Québec) — politique de confidentialité publique, consentement explicite, bandeau cookies
+
+## Pages principales
+
+- [Accueil (FR)](https://kintsugi-sushi.ca/) : page unique avec hero, histoire, menu interactif (12 plats / 3 onglets), équipe, ambiance, avis, FAQ, formulaire de réservation, contact
+- [Home (EN)](https://kintsugi-sushi.ca/index-en.html) : version anglaise complète
+
+## Menu (extrait — voir le site pour la carte complète)
+
+### Sashimis & Nigiris
+- **Sashimi Saumon** — 22 $ — saumon écossais, wasabi frais râpé
+- **Trio Nigiri** — 28 $ — saumon, thon rouge, crevette tigre
+- **Tataki Thon Rouge** — 26 $ — sésame, ponzu maison
+- **Carpaccio Hamachi** — 24 $ — yellowtail, vinaigrette yuzu-truffe
+
+### Makis Signature
+- **California Premium** — 18 $ — crabe royal, avocat, tobiko
+- **Rainbow Dragon** — 26 $ — 5 poissons en arc-en-ciel
+- **Spicy Tuna** — 19 $ — thon rouge épicé, mayo togarashi
+- **Jardin du Chef** — 16 $ — végétarien, mangue, tempura
+
+### Spécialités du Chef
+- **Chirashi du Chef** — 32 $ — bol de riz, 8 poissons crus de saison
+- **Tartare Akami** — 24 $ — thon rouge, huile de sésame, gingembre confit
+- **Omakase 7 services** — 95 $ — menu dégustation surprise
+- **Bento Découverte** — 36 $ — plateau dégustation à partager
+
+> Plus de 30 créations supplémentaires disponibles sur place. Carte des sakés et cocktails signature au restaurant. Allergènes signalés sur demande.
+
+## Équipe
+
+- **Hiroshi Tanaka** — Chef sushi, formé 12 ans à Tokyo (tradition *edomae*)
+- **Yuki Sato** — Sous-chef, spécialiste des spécialités chaudes et de la fermentation (8 ans d'expérience, 4 au Kyoto Kitcho)
+
+## Réservation
+
+Réservation conseillée 48 h à l'avance, surtout fin de semaine. Pour groupes 8+, contact direct par téléphone.
+
+- **Annulation** : gratuite jusqu'à 24 h avant
+- **Confirmation** : par email sous 1 h *(démo — non fonctionnel)*
+
+## Informations pratiques
+
+- **Métro** : Sherbrooke (ligne orange), 5 min à pied
+- **Stationnement** : sur rue (gratuit après 21 h) + Indigo à 2 min
+- **Paiements acceptés** : Visa, Mastercard, American Express, Interac, comptant
+- **Accessibilité** : entrée plain-pied, toilettes accessibles PMR
+- **Code vestimentaire** : tenue de ville (smart casual)
+- **Enfants** : bienvenus, chaise haute disponible
+- **Options végétariennes/véganes** : oui (maki "Jardin du Chef" + adaptations sur demande)
+- **Privatisation** : possible à partir de 20 personnes
+- **Allergies** : signaler à la réservation, le chef adapte le menu
+
+## Pages légales
+
+- [Politique de confidentialité (FR)](https://kintsugi-sushi.ca/politique-confidentialite.html) — conforme Loi 25
+- [Privacy Policy (EN)](https://kintsugi-sushi.ca/privacy-policy.html) — Quebec Law 25 compliant
+- [Mentions légales (FR)](https://kintsugi-sushi.ca/mentions-legales.html)
+- [Legal Notice (EN)](https://kintsugi-sushi.ca/legal-notice.html)
+
+## Confidentialité et données
+
+Conformément à la **Loi 25** (Québec) :
+- Aucun cookie de suivi, d'analyse ou publicitaire (un seul témoin technique pour mémoriser le choix de consentement)
+- Consentement explicite requis sur tous les formulaires
+- Données de réservation conservées 12 mois maximum
+- Aucun transfert de données hors Canada
+- Hébergement : Hostinger, centre de données Toronto
+
+## Optionnel
+
+- [Sitemap XML](https://kintsugi-sushi.ca/sitemap.xml)
+- [robots.txt](https://kintsugi-sushi.ca/robots.txt)
+- **Repo GitHub** : [github.com/lassrikhadija/resto_kintsugi](https://github.com/lassrikhadija/resto_kintsugi) (code source de la démo)
+
+## À propos de Nextiweb (créateur du site)
+
+[**Nextiweb.ca**](https://nextiweb.ca) est une agence web basée au Canada qui propose :
+- [Création de sites web sur mesure](https://nextiweb.ca/creation-site.html)
+- [Référencement SEO](https://nextiweb.ca/seo.html)
+- [Marketing digital (Google Ads, Meta Ads, infolettres)](https://nextiweb.ca/marketing-digital.html)
+
+Cette démo Kintsugi fait partie d'un portfolio de 5 sites sectoriels destiné à présenter le savoir-faire de Nextiweb à ses prospects.

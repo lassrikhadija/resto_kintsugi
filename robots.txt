@@ -1,5 +1,50 @@
+# ============================================================
+# robots.txt — Kintsugi Sushi Bar
+# ============================================================
+
+# --- Crawlers généralistes (Google, Bing, DuckDuckGo, etc.) ---
 User-agent: *
 Allow: /
+# Pages légales : autorisées au crawl mais marquées noindex côté HTML
+# (Disallow ici empêcherait le crawl ET la lecture du noindex)
 Disallow: /optimize-images.py
+Disallow: /make-logo-transparent.py
+Disallow: /.git/
 
+# --- Crawlers d'images ---
+User-agent: Googlebot-Image
+Allow: /images/optimized/
+
+# --- Crawlers IA (LLMs) — politique de transparence ---
+# Ces user-agents sont autorisés à lire le contenu public ;
+# voir /llms.txt pour la cartographie structurée du site.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# --- Sitemaps ---
 Sitemap: https://kintsugi-sushi.ca/sitemap.xml
+
+# --- Documentation pour LLMs ---
+# Cartographie structurée du site, utile aux assistants conversationnels :
+# https://kintsugi-sushi.ca/llms.txt
