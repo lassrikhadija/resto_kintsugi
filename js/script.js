@@ -7,6 +7,11 @@ const I18N = {
     alertReservation: (name) => `Merci ${name} ! Votre demande de réservation a bien été reçue.\n\n⚠️ Démo Nextiweb — aucune donnée n'est réellement envoyée.\nVisitez nextiweb.ca pour votre vrai site.`,
     openMenu: 'Ouvrir le menu',
     closeMenu: 'Fermer le menu',
+    cookieTitle: 'Témoins (cookies)',
+    cookieText: 'Ce site n\'utilise aucun cookie de suivi, d\'analyse ou publicitaire. Conformément à la <strong>Loi 25</strong> du Québec, votre consentement reste libre et révocable à tout moment. Détails dans notre <a href="politique-confidentialite.html">politique de confidentialité</a>.',
+    cookieAccept: 'Tout accepter',
+    cookieRefuse: 'Refuser',
+    consentRequired: 'Veuillez accepter la politique de confidentialité pour continuer.',
   },
   en: {
     sending: 'Sending...',
@@ -14,6 +19,11 @@ const I18N = {
     alertReservation: (name) => `Thank you ${name}! Your reservation request has been received.\n\n⚠️ Nextiweb Demo — no data is actually sent.\nVisit nextiweb.ca for your own real site.`,
     openMenu: 'Open menu',
     closeMenu: 'Close menu',
+    cookieTitle: 'Cookies',
+    cookieText: 'This site uses no tracking, analytics or advertising cookies. In accordance with Quebec\'s <strong>Law 25</strong>, your consent remains free and revocable at any time. Details in our <a href="privacy-policy.html">privacy policy</a>.',
+    cookieAccept: 'Accept all',
+    cookieRefuse: 'Refuse',
+    consentRequired: 'Please accept the privacy policy to continue.',
   }
 };
 const LANG = document.documentElement.lang.startsWith('en') ? 'en' : 'fr';
@@ -23,16 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 1. Header sticky shrink on scroll ---
   const header = document.getElementById('header');
-  const onScroll = () => {
-    if (window.scrollY > 60) header.classList.add('is-scrolled');
-    else header.classList.remove('is-scrolled');
-  };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  if (header) {
+    const onScroll = () => {
+      if (window.scrollY > 60) header.classList.add('is-scrolled');
+      else header.classList.remove('is-scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
 
   // --- 2. Mobile burger menu ---
   const burger = document.getElementById('burger');
   const nav = document.getElementById('nav');
+  if (burger && nav) {
   burger.addEventListener('click', () => {
     const isOpen = burger.classList.toggle('is-open');
     nav.classList.toggle('is-open');
@@ -55,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       burger.click();
     }
   });
+  } // end if (burger && nav)
 
   // --- 3. Menu tabs (with ARIA) ---
   const tabs = document.querySelectorAll('.menu__tab');
@@ -113,6 +127,13 @@ document.addEventListener('DOMContentLoaded', () => {
         form.reportValidity();
         return;
       }
+      // Loi 25 — consent check
+      const consent = form.querySelector('input[name="consent"]');
+      if (consent && !consent.checked) {
+        alert(t.consentRequired);
+        consent.focus();
+        return;
+      }
       const data = new FormData(form);
       const name = data.get('name');
       const btn = form.querySelector('button[type="submit"]');
@@ -143,6 +164,13 @@ document.addEventListener('DOMContentLoaded', () => {
         newsletter.reportValidity();
         return;
       }
+      // Loi 25 — consent check
+      const nlConsent = newsletter.querySelector('input[name="nlConsent"]');
+      if (nlConsent && !nlConsent.checked) {
+        alert(t.consentRequired);
+        nlConsent.focus();
+        return;
+      }
       newsletter.classList.add('is-success');
       setTimeout(() => {
         newsletter.classList.remove('is-success');
@@ -164,6 +192,43 @@ document.addEventListener('DOMContentLoaded', () => {
       card.style.removeProperty('--my');
     });
   });
+
+  // --- 8. Cookie banner (Loi 25) ---
+  // Only injects the banner if no choice is stored in localStorage.
+  const COOKIE_KEY = 'kintsugi-cookie-consent';
+  if (!localStorage.getItem(COOKIE_KEY)) {
+    const banner = document.createElement('div');
+    banner.className = 'cookie-banner';
+    banner.setAttribute('role', 'dialog');
+    banner.setAttribute('aria-live', 'polite');
+    banner.setAttribute('aria-label', t.cookieTitle);
+    banner.innerHTML = `
+      <div class="cookie-banner__title">${t.cookieTitle}</div>
+      <p class="cookie-banner__text">${t.cookieText}</p>
+      <div class="cookie-banner__actions">
+        <button type="button" class="cookie-banner__btn cookie-banner__btn--refuse" data-choice="refuse">${t.cookieRefuse}</button>
+        <button type="button" class="cookie-banner__btn cookie-banner__btn--accept" data-choice="accept">${t.cookieAccept}</button>
+      </div>
+    `;
+    document.body.appendChild(banner);
+    // Animate in
+    requestAnimationFrame(() => {
+      setTimeout(() => banner.classList.add('is-visible'), 600);
+    });
+    // Handle clicks
+    banner.querySelectorAll('button[data-choice]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const choice = btn.dataset.choice;
+        try {
+          localStorage.setItem(COOKIE_KEY, JSON.stringify({
+            choice, ts: new Date().toISOString()
+          }));
+        } catch (_) { /* ignore localStorage failures */ }
+        banner.classList.remove('is-visible');
+        setTimeout(() => banner.remove(), 500);
+      });
+    });
+  }
 
   // --- 7. FAQ — auto-close others when opening one ---
   const faqItems = document.querySelectorAll('.faq__item');

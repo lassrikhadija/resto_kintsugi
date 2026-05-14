@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://kintsugi-sushi.ca/</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://kintsugi-sushi.ca/" />
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://kintsugi-sushi.ca/index-en.html</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://kintsugi-sushi.ca/" />
@@ -31,5 +31,37 @@
       <image:loc>https://kintsugi-sushi.ca/images/optimized/image%20h1.jpg</image:loc>
       <image:title>Kintsugi Sushi Bar — Sushi platter</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://kintsugi-sushi.ca/politique-confidentialite.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://kintsugi-sushi.ca/politique-confidentialite.html" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://kintsugi-sushi.ca/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://kintsugi-sushi.ca/privacy-policy.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://kintsugi-sushi.ca/politique-confidentialite.html" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://kintsugi-sushi.ca/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://kintsugi-sushi.ca/mentions-legales.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://kintsugi-sushi.ca/mentions-legales.html" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://kintsugi-sushi.ca/legal-notice.html" />
+  </url>
+  <url>
+    <loc>https://kintsugi-sushi.ca/legal-notice.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://kintsugi-sushi.ca/mentions-legales.html" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://kintsugi-sushi.ca/legal-notice.html" />
   </url>
 </urlset>

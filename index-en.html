@@ -575,10 +575,21 @@
             <textarea name="message" rows="3"></textarea>
           </label>
         </div>
+
+        <div class="form__consent">
+          <label>
+            <input type="checkbox" name="consent" required />
+            <span>I agree that my contact details may be used to process my reservation, in accordance with the <a href="privacy-policy.html">privacy policy</a>. <em>(Quebec Law 25)</em></span>
+          </label>
+        </div>
+
         <button type="submit" class="btn btn--gold btn--full">Confirm my reservation</button>
         <p class="form__note">
           ✓ Free cancellation up to 24h before<br/>
           ✓ Email confirmation within 1 hour
+        </p>
+        <p class="form__privacy-info">
+          Your data is used solely to process your reservation. Kept for a maximum of 12 months, never resold. Right to access, rectify or withdraw: <a href="mailto:privacy@kintsugi-sushi.ca">privacy@kintsugi-sushi.ca</a>.
         </p>
       </form>
     </div>
@@ -739,10 +750,14 @@
           <input type="email" placeholder="Your email" required aria-label="Newsletter email" />
           <button type="submit" aria-label="Subscribe">→</button>
         </form>
+        <label class="newsletter__consent">
+          <input type="checkbox" name="nlConsent" required />
+          <span>I agree to receive emails from Kintsugi. Unsubscribe anytime. <a href="privacy-policy.html">Policy</a></span>
+        </label>
       </div>
     </div>
     <div class="footer__bottom">
-      <p>&copy; 2026 Kintsugi Sushi Bar — All rights reserved. · <a href="#">Legal notice</a> · <a href="#">Privacy policy</a></p>
+      <p>&copy; 2026 Kintsugi Sushi Bar — All rights reserved. · <a href="legal-notice.html">Legal notice</a> · <a href="privacy-policy.html">Privacy policy</a> · <span class="badge-loi25">Law 25 ✓</span></p>
       <p class="footer__credit">
         Demo site designed by
         <a href="https://nextiweb.ca" target="_blank" rel="noopener">Nextiweb.ca</a>
