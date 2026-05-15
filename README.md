@@ -72,7 +72,7 @@ python make-logo-transparent.py
 1. Uploader tout le dossier (sauf `*.py` et `images/*.png`) à la racine du domaine
 2. Vérifier que le `.htaccess` Hostinger sert `index.html` par défaut
 3. Pour la version EN, accessible via `/index-en.html`
-4. Mettre à jour les URLs dans `index.html`, `index-en.html`, `sitemap.xml` et le Schema.org JSON-LD si le domaine final diffère de `kintsugi-sushi.ca`
+4. Mettre à jour les URLs dans `index.html`, `index-en.html`, `sitemap.xml` et le Schema.org JSON-LD si le domaine final diffère de `restaurant-cafe.nextiwebstudio.ca`
 
 ## 📄 Licence
 

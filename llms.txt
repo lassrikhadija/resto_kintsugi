@@ -23,8 +23,8 @@
 
 ## Pages principales
 
-- [Accueil (FR)](https://kintsugi-sushi.ca/) : page unique avec hero, histoire, menu interactif (12 plats / 3 onglets), équipe, ambiance, avis, FAQ, formulaire de réservation, contact
-- [Home (EN)](https://kintsugi-sushi.ca/index-en.html) : version anglaise complète
+- [Accueil (FR)](https://restaurant-cafe.nextiwebstudio.ca/) : page unique avec hero, histoire, menu interactif (12 plats / 3 onglets), équipe, ambiance, avis, FAQ, formulaire de réservation, contact
+- [Home (EN)](https://restaurant-cafe.nextiwebstudio.ca/index-en.html) : version anglaise complète
 
 ## Menu (extrait — voir le site pour la carte complète)
 
@@ -74,10 +74,10 @@ Réservation conseillée 48 h à l'avance, surtout fin de semaine. Pour groupes 
 
 ## Pages légales
 
-- [Politique de confidentialité (FR)](https://kintsugi-sushi.ca/politique-confidentialite.html) — conforme Loi 25
-- [Privacy Policy (EN)](https://kintsugi-sushi.ca/privacy-policy.html) — Quebec Law 25 compliant
-- [Mentions légales (FR)](https://kintsugi-sushi.ca/mentions-legales.html)
-- [Legal Notice (EN)](https://kintsugi-sushi.ca/legal-notice.html)
+- [Politique de confidentialité (FR)](https://restaurant-cafe.nextiwebstudio.ca/politique-confidentialite.html) — conforme Loi 25
+- [Privacy Policy (EN)](https://restaurant-cafe.nextiwebstudio.ca/privacy-policy.html) — Quebec Law 25 compliant
+- [Mentions légales (FR)](https://restaurant-cafe.nextiwebstudio.ca/mentions-legales.html)
+- [Legal Notice (EN)](https://restaurant-cafe.nextiwebstudio.ca/legal-notice.html)
 
 ## Confidentialité et données
 
@@ -90,8 +90,8 @@ Conformément à la **Loi 25** (Québec) :
 
 ## Optionnel
 
-- [Sitemap XML](https://kintsugi-sushi.ca/sitemap.xml)
-- [robots.txt](https://kintsugi-sushi.ca/robots.txt)
+- [Sitemap XML](https://restaurant-cafe.nextiwebstudio.ca/sitemap.xml)
+- [robots.txt](https://restaurant-cafe.nextiwebstudio.ca/robots.txt)
 - **Repo GitHub** : [github.com/lassrikhadija/resto_kintsugi](https://github.com/lassrikhadija/resto_kintsugi) (code source de la démo)
 
 ## À propos de Nextiweb (créateur du site)

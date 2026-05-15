@@ -43,8 +43,8 @@ User-agent: CCBot
 Allow: /
 
 # --- Sitemaps ---
-Sitemap: https://kintsugi-sushi.ca/sitemap.xml
+Sitemap: https://restaurant-cafe.nextiwebstudio.ca/sitemap.xml
 
 # --- Documentation pour LLMs ---
 # Cartographie structurée du site, utile aux assistants conversationnels :
-# https://kintsugi-sushi.ca/llms.txt
+# https://restaurant-cafe.nextiwebstudio.ca/llms.txt
