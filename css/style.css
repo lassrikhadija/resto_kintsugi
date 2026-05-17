@@ -46,8 +46,9 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   overflow-x: clip;
-  max-width: 100vw;     /* belt-and-suspenders : empeche le body de depasser la viewport */
-  position: relative;
+  /* PAS de position:relative ni max-width:100vw ici :
+     ces deux proprietes peuvent casser position:fixed du header sur iOS Safari.
+     overflow-x: clip sur html + body suffit pour bloquer le scroll horizontal. */
 }
 /* Empeche tout enfant (image, video, code, iframe...) de declencher un scroll horizontal */
 img, video, svg, iframe, table, pre, code { max-width: 100%; }
@@ -160,6 +161,11 @@ input, select, textarea { font: inherit; color: inherit; }
   padding: 18px 0;
   background: rgba(10,10,10,0.4);
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  /* iOS Safari : force l'header dans son propre layer + assure que position:fixed
+     reste ancre a la viewport meme si un ancetre a overflow:clip ou un transform */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform, background;
   transition: all .3s;
   border-bottom: 1px solid transparent;
 }
