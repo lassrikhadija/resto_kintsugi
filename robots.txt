@@ -1,5 +1,5 @@
 # ============================================================
-# robots.txt — Kintsugi Sushi Bar
+# robots.txt — Kintsugi Sushi
 # ============================================================
 
 # --- Crawlers généralistes (Google, Bing, DuckDuckGo, etc.) ---

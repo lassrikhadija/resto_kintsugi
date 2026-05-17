@@ -1,5 +1,5 @@
 /* ============================================
-   KINTSUGI — Sushi Bar
+   KINTSUGI — Sushi
    Demo Nextiweb · Charte: noir profond + or
    ============================================ */
 
@@ -30,12 +30,11 @@
 }
 
 /* ============ RESET ============ */
-*, *::before, *::after { box-sizing: border-box; }
-* { margin: 0; padding: 0; }
 /* Box-sizing universel : padding + border INCLUS dans la width.
    Indispensable pour eviter que les formulaires/cards ne debordent
    leur conteneur sur mobile. */
 *, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
 
 html {
   scroll-behavior: smooth;

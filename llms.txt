@@ -1,12 +1,12 @@
-# Kintsugi Sushi Bar
+# Kintsugi Sushi
 
 > Restaurant japonais haut de gamme à Montréal (Québec, Canada). Cuisine traditionnelle façonnée à la main par un chef formé à Tokyo. Sushis, sashimis, créations signature et menu omakase. Cadre intimiste noir et or inspiré du *kintsugi*, l'art japonais de réparer la céramique avec de l'or.
 
-**⚠️ Note importante** : ce site est une **démonstration vitrine** créée par [Nextiweb.ca](https://nextiweb.ca), agence web canadienne. Le restaurant Kintsugi Sushi Bar n'existe pas réellement — coordonnées, équipe et avis sont illustratifs. Pour un vrai site web sur mesure, contactez Nextiweb.
+**⚠️ Note importante** : ce site est une **démonstration vitrine** créée par [Nextiweb.ca](https://nextiweb.ca), agence web canadienne. Le restaurant Kintsugi Sushi n'existe pas réellement — coordonnées, équipe et avis sont illustratifs. Pour un vrai site web sur mesure, contactez Nextiweb.
 
 ## À propos
 
-- **Nom** : Kintsugi Sushi Bar
+- **Nom** : Kintsugi Sushi
 - **Type** : Restaurant japonais (sushi premium)
 - **Ville** : Montréal, Québec, Canada
 - **Adresse** : 1234 rue Saint-Denis, Montréal (QC) H2X 3K2 *(fictive — démo)*
@@ -46,7 +46,7 @@
 - **Omakase 7 services** — 95 $ — menu dégustation surprise
 - **Bento Découverte** — 36 $ — plateau dégustation à partager
 
-> Plus de 30 créations supplémentaires disponibles sur place. Carte des sakés et cocktails signature au restaurant. Allergènes signalés sur demande.
+> Plus de 30 créations supplémentaires disponibles sur place. Sélection de thés japonais et boissons fraîches au restaurant. Allergènes signalés sur demande.
 
 ## Équipe
 
