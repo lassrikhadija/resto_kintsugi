@@ -1266,21 +1266,6 @@ input, select, textarea { font: inherit; color: inherit; }
 }
 .legal__demo-note strong { color: var(--gold); }
 
-/* ============ BADGE LOI 25 (footer copyright) ============ */
-.badge-loi25 {
-  display: inline-block;
-  padding: 2px 10px;
-  margin-left: 4px;
-  background: rgba(74,222,128,0.10);
-  color: #6ee7a3;
-  border: 1px solid rgba(74,222,128,0.35);
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  white-space: nowrap;
-}
-
 /* ============ CONSENTEMENT FORMULAIRES ============ */
 .form__consent {
   margin: 18px 0 8px;
