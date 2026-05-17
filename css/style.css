@@ -32,6 +32,11 @@
 /* ============ RESET ============ */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
+/* Box-sizing universel : padding + border INCLUS dans la width.
+   Indispensable pour eviter que les formulaires/cards ne debordent
+   leur conteneur sur mobile. */
+*, *::before, *::after { box-sizing: border-box; }
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
@@ -717,10 +722,22 @@ input, select, textarea { font: inherit; color: inherit; }
   border-radius: var(--radius);
   padding: 40px;
   box-shadow: var(--shadow-lg);
+  width: 100%;       /* garantit que le form occupe toute la colonne sans deborder */
+  max-width: 100%;
 }
 .form__row { margin-bottom: 20px; }
 .form__row--2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-@media (max-width: 500px) { .form__row--2 { grid-template-columns: 1fr; } }
+@media (max-width: 700px) {
+  .form { padding: 28px 22px; border-radius: 12px; }
+}
+@media (max-width: 500px) {
+  .form { padding: 24px 18px; }
+  .form__row--2 { grid-template-columns: 1fr; }
+}
+/* Empeche les inputs/textarea de declencher un scroll horizontal */
+.form__field input,
+.form__field select,
+.form__field textarea { width: 100%; max-width: 100%; min-width: 0; }
 
 .form__field { display: flex; flex-direction: column; }
 .form__field span {
