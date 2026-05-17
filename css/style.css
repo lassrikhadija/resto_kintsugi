@@ -77,6 +77,11 @@ input, select, textarea { font: inherit; color: inherit; }
 .container--split {
   display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
 }
+/* CRUCIAL : les enfants directs d'un CSS grid ont min-width: auto par defaut,
+   ce qui les fait gonfler au-dela du 1fr si leur contenu est plus large
+   (input date, label long, etc.) -> section qui deborde sur mobile.
+   min-width: 0 force le respect du 1fr. */
+.container--split > * { min-width: 0; }
 @media (max-width: 900px) {
   .container--split { grid-template-columns: 1fr; gap: 50px; }
 }
@@ -701,6 +706,12 @@ input, select, textarea { font: inherit; color: inherit; }
   display: flex; justify-content: space-between; align-items: center;
   padding: 16px 0; border-bottom: 1px solid var(--border);
   gap: 24px;
+  flex-wrap: wrap; /* sur mobile, strong et span se mettent sur 2 lignes si manque de place */
+}
+.info-list li strong, .info-list li span, .info-list li a { min-width: 0; }
+@media (max-width: 500px) {
+  .info-list li { gap: 4px 16px; padding: 14px 0; }
+  .info-list li span, .info-list li a { text-align: left; }
 }
 .info-list li strong {
   font-family: var(--font-serif); font-size: 1.05rem;
@@ -766,6 +777,9 @@ input, select, textarea { font: inherit; color: inherit; }
   border: 1px solid var(--border-strong);
   border-radius: var(--radius);
   padding: 14px 16px;
+  /* iOS Safari : empeche input date / select / number d'avoir une largeur
+     intrinseque plus grande que leur conteneur (probleme connu sur mobile) */
+  -webkit-appearance: none; appearance: none;
   color: var(--text);
   font-size: 0.95rem;
   transition: border-color .25s;
