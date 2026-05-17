@@ -1073,6 +1073,87 @@ input, select, textarea { font: inherit; color: inherit; }
   .nextiweb { padding: 80px 0 90px; }
 }
 
+/* ----- LinkedIn social row (sous les 3 cards) ----- */
+.nextiweb__social {
+  margin-top: 56px;
+  text-align: center;
+  padding-top: 36px;
+  border-top: 1px solid rgba(212,175,55,0.14);
+  position: relative; z-index: 1;
+}
+.nextiweb__social-text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.55;
+}
+.nextiweb__social-text strong {
+  color: var(--gold);
+  font-weight: 500;
+}
+.nextiweb__social-links {
+  display: inline-flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.nextiweb__social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 20px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(212,175,55,0.28);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: all .28s cubic-bezier(.2,.8,.2,1);
+}
+.nextiweb__social-links a:hover,
+.nextiweb__social-links a:focus-visible {
+  background: rgba(212,175,55,0.10);
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.45);
+  outline: none;
+}
+.nextiweb__social-links svg {
+  flex-shrink: 0;
+  color: #0a66c2; /* LinkedIn blue */
+  transition: color .28s;
+}
+.nextiweb__social-links a:hover svg,
+.nextiweb__social-links a:focus-visible svg { color: var(--gold); }
+
+/* ----- Footer credit : micro-icones LinkedIn ----- */
+.footer__credit-social {
+  display: inline-flex;
+  gap: 6px;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+.footer__credit-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; height: 24px;
+  border-radius: 5px;
+  color: #0a66c2;
+  background: rgba(10,102,194,0.08);
+  transition: color .2s, background .2s, transform .2s;
+}
+.footer__credit-social a:hover,
+.footer__credit-social a:focus-visible {
+  color: var(--gold);
+  background: rgba(212,175,55,0.12);
+  transform: translateY(-1px);
+  outline: none;
+}
+
 /* ============ PAGES LEGALES (politique, mentions) ============ */
 .legal {
   background: var(--bg);
