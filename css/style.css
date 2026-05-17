@@ -505,7 +505,9 @@ input, select, textarea { font: inherit; color: inherit; }
 /* ============ ÉQUIPE ============ */
 .team {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  /* min(100%, 360px) : sur mobile etroit, ne force PAS une min-width de 360px
+     qui ferait deborder la grille. Adopte la largeur du parent si plus petite. */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
   gap: 30px;
 }
 .team__member {
@@ -528,6 +530,10 @@ input, select, textarea { font: inherit; color: inherit; }
 }
 .team__member:hover .team__photo img { transform: scale(1.05); }
 .team__info { padding: 28px 32px; }
+@media (max-width: 600px) {
+  .team__info { padding: 22px 20px; }
+  .team__info h3 { font-size: 1.5rem; }
+}
 .team__role {
   display: block;
   font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
@@ -582,7 +588,9 @@ input, select, textarea { font: inherit; color: inherit; }
 .rating__text { color: var(--text-muted); font-size: 0.9rem; }
 
 .reviews {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid;
+  /* min(100%, 320px) : meme principe que .team, evite l'overflow sur mobile */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 30px;
   margin-bottom: 60px;
 }
@@ -591,6 +599,10 @@ input, select, textarea { font: inherit; color: inherit; }
   border-radius: var(--radius); padding: 32px 28px;
   display: flex; gap: 20px; align-items: flex-start;
   transition: all .35s;
+  min-width: 0; /* empeche le contenu (citation longue) d'etendre la cellule */
+}
+@media (max-width: 600px) {
+  .review { padding: 24px 20px; gap: 14px; }
 }
 .review:hover {
   border-color: var(--gold-deep);
@@ -625,6 +637,10 @@ input, select, textarea { font: inherit; color: inherit; }
   border: 1px solid var(--gold-deep);
   border-radius: var(--radius);
   position: relative; overflow: hidden;
+}
+@media (max-width: 600px) {
+  .cta-banner { padding: 36px 20px; }
+  .cta-banner h3 { font-size: 1.5rem; margin-bottom: 22px; }
 }
 .cta-banner::before {
   content: "金"; position: absolute;
