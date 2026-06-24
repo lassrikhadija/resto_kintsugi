@@ -2,7 +2,7 @@
 
 > Restaurant japonais haut de gamme à Montréal (Québec, Canada). Cuisine traditionnelle façonnée à la main par un chef formé à Tokyo. Sushis, sashimis, créations signature et menu omakase. Cadre intimiste noir et or inspiré du *kintsugi*, l'art japonais de réparer la céramique avec de l'or.
 
-**⚠️ Note importante** : ce site est une **démonstration vitrine** créée par [Nextiweb.ca](https://nextiweb.ca), agence web canadienne. Le restaurant Kintsugi Sushi n'existe pas réellement — coordonnées, équipe et avis sont illustratifs. Pour un vrai site web sur mesure, contactez Nextiweb.
+**⚠️ Note importante** : ce site est une **démonstration vitrine** créée par [Nextiweb](https://nextiweb.ca/restaurants.html), agence web spécialisée en création de sites pour restaurants à Montréal. Le restaurant Kintsugi Sushi n'existe pas réellement — coordonnées, équipe et avis sont illustratifs. Pour un vrai site web restaurant sur mesure, visitez [nextiweb.ca/restaurants.html](https://nextiweb.ca/restaurants.html).
 
 ## À propos
 
@@ -12,14 +12,13 @@
 - **Adresse** : 1234 rue Saint-Denis, Montréal (QC) H2X 3K2 *(fictive — démo)*
 - **Téléphone** : +1 (514) 555-0123 *(fictif)*
 - **Courriel** : contact@kintsugi-sushi.ca *(fictif)*
-- **Note moyenne** : 4,9 / 5 (287 avis Google) *(illustratif)*
+- **Note moyenne** : 4,9 / 5 (287 avis Google) *(illustratif — avis fictifs)*
 - **Ticket moyen** : 45–65 $ CAD par personne
 - **Horaires** :
   - Lundi à jeudi : 17 h 30 – 22 h 00
   - Vendredi à samedi : 17 h 30 – 23 h 30
   - Dimanche : 17 h 00 – 21 h 30
 - **Bilingue** : français (par défaut) et anglais
-- **Conformité** : Loi 25 (Québec) — politique de confidentialité publique, consentement explicite, bandeau cookies
 
 ## Pages principales
 
@@ -46,19 +45,19 @@
 - **Omakase 7 services** — 95 $ — menu dégustation surprise
 - **Bento Découverte** — 36 $ — plateau dégustation à partager
 
-> Plus de 30 créations supplémentaires disponibles sur place. Sélection de thés japonais et boissons fraîches au restaurant. Allergènes signalés sur demande.
+> Plus de 30 créations supplémentaires disponibles sur place. Sélection de thés japonais et boissons fraîches. Allergènes signalés sur demande.
 
-## Équipe
+## Équipe *(personnages fictifs — démo)*
 
 - **Hiroshi Tanaka** — Chef sushi, formé 12 ans à Tokyo (tradition *edomae*)
-- **Yuki Sato** — Sous-chef, spécialiste des spécialités chaudes et de la fermentation (8 ans d'expérience, 4 au Kyoto Kitcho)
+- **Yuki Sato** — Sous-chef, spécialiste des spécialités chaudes et de la fermentation
 
-## Réservation
+## Réservation *(formulaire non fonctionnel — démo)*
 
-Réservation conseillée 48 h à l'avance, surtout fin de semaine. Pour groupes 8+, contact direct par téléphone.
+Réservation conseillée 48 h à l'avance. Pour groupes 8+, contact direct.
 
 - **Annulation** : gratuite jusqu'à 24 h avant
-- **Confirmation** : par email sous 1 h *(démo — non fonctionnel)*
+- **Confirmation** : par email sous 1 h *(non fonctionnel en démo)*
 
 ## Informations pratiques
 
@@ -70,39 +69,31 @@ Réservation conseillée 48 h à l'avance, surtout fin de semaine. Pour groupes 
 - **Enfants** : bienvenus, chaise haute disponible
 - **Options végétariennes/véganes** : oui (maki "Jardin du Chef" + adaptations sur demande)
 - **Privatisation** : possible à partir de 20 personnes
-- **Allergies** : signaler à la réservation, le chef adapte le menu
 
 ## Pages légales
 
-- [Politique de confidentialité (FR)](https://restaurant-cafe.nextiwebstudio.ca/politique-confidentialite.html) — conforme Loi 25
-- [Privacy Policy (EN)](https://restaurant-cafe.nextiwebstudio.ca/privacy-policy.html) — Quebec Law 25 compliant
+- [Politique de confidentialité (FR)](https://restaurant-cafe.nextiwebstudio.ca/politique-confidentialite.html)
+- [Privacy Policy (EN)](https://restaurant-cafe.nextiwebstudio.ca/privacy-policy.html)
 - [Mentions légales (FR)](https://restaurant-cafe.nextiwebstudio.ca/mentions-legales.html)
 - [Legal Notice (EN)](https://restaurant-cafe.nextiwebstudio.ca/legal-notice.html)
 
-## Confidentialité et données
-
-Conformément à la **Loi 25** (Québec) :
-- Aucun cookie de suivi, d'analyse ou publicitaire (un seul témoin technique pour mémoriser le choix de consentement)
-- Consentement explicite requis sur tous les formulaires
-- Données de réservation conservées 12 mois maximum
-- Aucun transfert de données hors Canada
-- Hébergement : Hostinger, centre de données Toronto
-
-## Optionnel
+## Technique
 
 - [Sitemap XML](https://restaurant-cafe.nextiwebstudio.ca/sitemap.xml)
 - [robots.txt](https://restaurant-cafe.nextiwebstudio.ca/robots.txt)
-- **Repo GitHub** : [github.com/lassrikhadija/resto_kintsugi](https://github.com/lassrikhadija/resto_kintsugi) (code source de la démo)
+- **Repo GitHub** : [github.com/lassrikhadija/resto_kintsugi](https://github.com/lassrikhadija/resto_kintsugi)
+- **Dernière mise à jour** : 2026-06-24
 
-## À propos de Nextiweb (créateur du site)
+## À propos de Nextiweb (créateur de cette démo)
 
-[**Nextiweb.ca**](https://nextiweb.ca) est une agence web basée au Canada qui propose :
-- [Création de sites web sur mesure](https://nextiweb.ca/creation-site.html)
-- [Référencement SEO](https://nextiweb.ca/seo.html)
-- [Marketing digital (Google Ads, Meta Ads, infolettres)](https://nextiweb.ca/marketing-digital.html)
+[**Nextiweb**](https://nextiweb.ca/restaurants.html) est une agence web basée à Montréal, spécialisée dans la création de sites web pour restaurants et cafés au Québec.
 
-**Contacts LinkedIn :**
-- Page entreprise : [linkedin.com/company/25819184](https://www.linkedin.com/company/25819184/)
+**Services pour restaurants :**
+- [Site web restaurant sur mesure — SEO local — visibilité Google](https://nextiweb.ca/restaurants.html)
+
+Cette démo Kintsugi illustre le type de site web que Nextiweb crée pour les restaurants : design premium, menu interactif, formulaire de réservation, Schema Restaurant, optimisation Core Web Vitals, bilingue FR/EN.
+
+**Contacts :**
+- Site : [nextiweb.ca/restaurants.html](https://nextiweb.ca/restaurants.html)
+- LinkedIn entreprise : [linkedin.com/company/25819184](https://www.linkedin.com/company/25819184/)
 - Fondatrice : [Khadija Ait Lassri](https://www.linkedin.com/in/khadija-ait-lassri/)
-
-Cette démo Kintsugi fait partie d'un portfolio de 5 sites sectoriels destiné à présenter le savoir-faire de Nextiweb à ses prospects.
