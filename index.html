@@ -40,16 +40,14 @@
   <link rel="apple-touch-icon" href="images/optimized/logo-restaurant-kintsugi-fond-noir.png" />
 
   <!-- Performance hints -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="image" href="images/optimized/site-web-restaurant-montreal-hero-mobile.jpg" type="image/jpeg" media="(max-width: 768px)" fetchpriority="high" />
   <link rel="preload" as="image" href="images/optimized/site-web-restaurant-montreal-hero.webp" type="image/webp" media="(min-width: 769px)" fetchpriority="high" />
   <link rel="dns-prefetch" href="https://www.openstreetmap.org" />
 
-  <!-- Fonts — chargement non-bloquant (évite render-blocking) -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@400;500&display=optional" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@400;500&display=optional" media="print" onload="this.media='all'" />
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@400;500&display=optional" /></noscript>
+  <!-- Fonts locales (no Google Fonts request) -->
+  <link rel="preload" href="fonts/cormorant-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="fonts/fonts.css" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.min.css" />
