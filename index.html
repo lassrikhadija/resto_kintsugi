@@ -42,7 +42,8 @@
   <!-- Performance hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="image" href="images/optimized/site-web-restaurant-montreal-hero.webp" type="image/webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="images/optimized/site-web-restaurant-montreal-hero-mobile.jpg" type="image/jpeg" media="(max-width: 768px)" fetchpriority="high" />
+  <link rel="preload" as="image" href="images/optimized/site-web-restaurant-montreal-hero.webp" type="image/webp" media="(min-width: 769px)" fetchpriority="high" />
   <link rel="dns-prefetch" href="https://www.openstreetmap.org" />
 
   <!-- Fonts — chargement non-bloquant (évite render-blocking) -->
@@ -51,7 +52,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" /></noscript>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 
   <!-- ============ Schema.org : Restaurant ============ -->
   <script type="application/ld+json">
