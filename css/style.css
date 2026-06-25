@@ -21,7 +21,7 @@
   --shadow-lg: 0 20px 60px rgba(0,0,0,0.6);
   --shadow-gold: 0 8px 30px rgba(212,175,55,0.25);
 
-  --font-serif: "Cormorant Garamond", "Noto Serif JP", Georgia, serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
 
   --maxw: 1240px;
@@ -302,7 +302,7 @@ input, select, textarea { font: inherit; color: inherit; }
 }
 .hero__kicker {
   display: inline-block;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", Georgia, serif;
   color: var(--gold); font-size: 14px; letter-spacing: 0.3em;
   margin-bottom: 28px;
 }
@@ -648,7 +648,7 @@ input, select, textarea { font: inherit; color: inherit; }
 }
 .cta-banner::before {
   content: "金"; position: absolute;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", Georgia, serif;
   font-size: 14rem; color: rgba(212,175,55,0.04);
   top: -40px; right: -20px; line-height: 1;
   pointer-events: none;
