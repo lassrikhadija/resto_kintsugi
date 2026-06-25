@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(banner);
     // Animate in
     requestAnimationFrame(() => {
-      setTimeout(() => banner.classList.add('is-visible'), 600);
+      setTimeout(() => banner.classList.add('is-visible'), 50);
     });
     // Handle clicks
     banner.querySelectorAll('button[data-choice]').forEach(btn => {
